@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montagu+Slab:wght@400;500&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+          <a href="index.html"><img src="img/tu logo.png"alt="tu logo">  </a>  
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+           <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+</section>
+<!-- About us content -->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+           <h1>We are No 1 university of nepal</h1>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex beatae fugiat mollitia eius veritatis autem. Reiciendis impedit mollitia est enim, porro ea, doloribus sit eum quos modi voluptates error aperiam!</p> 
+           <a href="" class="button-tag red-btn">Explore Now</a>
+        </div>
+        <div class="about-col">
+            <img src="img/about.jpg" alt="about us">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- footer -->
+<section class="footer">
+    <h4>About us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate neque odit placeat provident eligendi.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+
+    </div>
+
+</section>
+
+<!-- java script for toggle menue -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showmenu(){
+        navLinks.style.right = "0";
+      }
+      function hidemenu(){
+        navLinks.style.right = "-200px";
+    
+    }
+</script>
+</body>
+</html>

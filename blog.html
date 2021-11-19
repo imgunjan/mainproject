@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montagu+Slab:wght@400;500&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Blog</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+          <a href="index.html"><img src="img/tu logo.png"alt="tu logo">  </a>  
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+           <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Our Certificate And Program</h1>
+</section>
+<!-- this is for blog -->
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="img/certificate.jpg">
+            <h2>Our Certificate And Program</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis minima dolore voluptatum, nihil, placeat harum doloremque excepturi officia, error deleniti nobis quo. Consequuntur ullam quibusdam neque quis iste perferendis magni?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quidem voluptatibus id, sequi esse aperiam reprehenderit minima accusantium quam cumque voluptatum voluptatem autem inventore reiciendis ipsum obcaecati laudantium quo impedit debitis iure harum incidunt soluta deleniti nesciunt. Vel illum tempore corporis ratione rem deserunt consequatur consectetur eos, sequi eligendi delectus nemo repellendus omnis dolore molestias inventore facilis nesciunt eaque dicta distinctio explicabo nobis! Magni libero at sequi magnam voluptatem dolorum porro. Unde nobis ex doloremque, recusandae ipsam repellendus rerum est adipisci tempora facilis rem dolor totam eum possimus atque qui. Ullam, id quasi possimus facere dolore aperiam dolorem maxime autem?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis voluptatum necessitatibus quasi ipsam recusandae asperiores minus suscipit quisquam minima id, odio voluptatibus quod placeat reiciendis provident eligendi sapiente mollitia!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, accusamus sint! Tempore asperiores a vel quia porro unde sed corporis quod adipisci sunt voluptates alias quidem, quaerat enim beatae veritatis!</p>
+
+            <div class="comment-box">
+               <h3>Leave a comment</h3>
+               <!-- <form class="comment-form"> -->
+                <form class="comment-form" name="myForm"  onsubmit="return validateForm()">
+                   <input type="text" placeholder="Enter Name" id ="user">
+                   <span id="username"></span>
+                   <input type="Email" placeholder="Enter Email"  id="email">
+                   <span id="user_email"></span>
+                   <textarea rows="15" placeholder="your comment"></textarea>
+                   <button type="Submit" class="button-tag red-btn">Post Comment</button>
+               </form>
+
+            </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post catogories</h3>
+            <div>
+                <span>Bachlor of Business administration</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Bachlor of Business Studies</span>
+                <span>40</span>
+            </div>
+            <div>
+                <span>Environmental science</span>
+                <span>50</span>
+            </div>
+            <div>
+                <span>Bachelor in Fine Artsa</span>
+                <span>23</span>
+            </div>
+            <div>
+                <span>Bachelor in Computer Application</span>
+                <span>30</span>
+            </div>
+
+        </div>
+</section>
+
+
+<!-- footer -->
+<section class="footer">
+    <h4>About us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate neque odit placeat provident eligendi.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+
+    </div>
+
+</section>
+
+<!-- java script for toggle menue -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showmenu(){
+        navLinks.style.right = "0";
+      }
+      function hidemenu(){
+        navLinks.style.right = "-200px";
+    
+    }
+</script>
+<script>
+    function validateForm(){
+        var user1 = document.getElementById("user").value
+        var email2 =document.getElementById("email").value
+
+        if (user1 == ""){
+            document.getElementById("username").innerHTML =" ** Please Fill the username"
+
+        }
+    }
+
+</script>
+</body>
+</html>
